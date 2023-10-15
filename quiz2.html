@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        input::-webkit-input-placeholder {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #a19f9f;
+        }
+        textarea::-webkit-input-placeholder {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #a19f9f;
+        }
+
+        body {
+            background-color: #241c1cd3;
+            color: aliceblue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-right: 25px;
+        }
+        .main-cont {
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+            /* padding-top: 30px; */
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px 0px 20px 0px;
+        }
+
+           /* padding: 0px 12px; */
+        
+        /* .col-1 {
+            margin-right: 20px;
+            width: 75%;
+        } */
+        
+
+        textarea {
+            width: 96%;
+            height: 110px;
+            margin-right: 0px;
+            background-color: #221818d3;
+            color: azure;
+            border: none;
+            border-radius: 8px;
+            font-size: 22px;
+            padding: 15px;
+
+        }
+        input {
+            padding: 9px 5px;
+            font-size: 22px;
+            border: none;
+            border-radius: 8px;
+            background-color: #221818d3;
+            color: white;
+            padding-right: 0px;
+            margin-bottom: 5px;
+            width: 100%;
+            
+        }
+        form {
+            padding: 25px;
+            border: 1px solid #666666;
+            border-radius: 9px;
+            box-shadow: 0 0 5px #666666;
+            margin-right: 10px;
+        }
+        button {
+            margin-top: 25px;
+            font-size: 13px;
+            background-color: #241c1cd3;
+            color: aliceblue;
+            padding: 10px 45px;
+            border: 1px solid aliceblue ;
+            border-radius: 30px;
+            margin-bottom: 20px;
+
+        }
+        #row {
+            margin-bottom: 23px;
+        }
+        .location {
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0px;
+        }
+        iframe {
+            border-radius: 10px;
+            margin: 0px 12px;
+        }
+        
+        
+        
+    </style>
+
+</head>
+<body>
+    <div class="main-cont pt-4">
+        <div class="col-md-6">
+            <h1>Where am I</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.825892468885!2d36.82702507376693!3d-1.2779667356145699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f177c32f3f225%3A0x953c77fd3c11a302!2sApen%20Softwares%20LTD!5e0!3m2!1sen!2ske!4v1697129018002!5m2!1sen!2ske" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <div class="col-md-6 message">
+            <h1>
+                Send me a message
+            </h1>
+            
+            <form class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+              
+              
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
